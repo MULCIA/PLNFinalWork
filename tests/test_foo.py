@@ -8,7 +8,8 @@ class TestFoo(TestCase):
         self.foo = Foo()
 
     def test_foo(self):
-        self.assertTrue(True, True)
+    	self.foo()
+        self.assertEqual(self.foo, "foo")
 
 if __name__ == '__main__':
     unittest.main()
