@@ -3,5 +3,5 @@ class Foo(object):
     def __init__(self):
         self.foo = "foo"
 
-    def foo(self):
+    def print_foo(self):
         print(self.foo)
