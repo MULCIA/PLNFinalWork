@@ -6,7 +6,6 @@ CHANNELS = 2
 RATE = 44100
 CHUNK = 1024
 RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = 'output.wav'
 
 class Audio_Recorder(object):
 
@@ -25,8 +24,8 @@ class Audio_Recorder(object):
         self.stream.close()
         self.audio.terminate()
 
-    def save_file(self):
-        waveFile = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+    def save_file(self, audio_output_filename):
+        waveFile = wave.open(audio_output_filename, 'wb')
         waveFile.setnchannels(CHANNELS)
         waveFile.setsampwidth(self.audio.get_sample_size(FORMAT))
         waveFile.setframerate(RATE)

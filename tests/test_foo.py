@@ -2,7 +2,7 @@ from unittest import TestCase
 from PLNFinalWork.foo import Foo
 
 class TestGenome(TestCase):
-    
+
     def setUp(self):
         TestCase.setUp(self)
         self.foo = Foo()
