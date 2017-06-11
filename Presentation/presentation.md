@@ -183,7 +183,86 @@ speech_client = speech.Client()
 # Rest of code
 ```
 
+---
+
+# My implementation
+
+```
+import io
+import os
+from google.cloud import speech
+
+class Audio_2_Text(object):
+
+    def __init__(self, file_name, audio_lang):
+        self.speech_client = speech.Client()
+        self.file_name = file_name
+        self.audio = None
+        self.audio_lang = audio_lang
+```
+
 --- 
+
+
+# My implementation
+
+```
+def find_file(self):
+        file_name = os.path.join(
+            os.path.dirname(__file__),
+            '.',
+            self.file_name
+        )
+```
+
+---
+
+
+# My implementation
+
+```
+def load_audio(self):
+        with io.open(self.file_name, 'rb') as audio_file:
+            content = audio_file.read()
+            self.audio = speech_client.sample(
+                content,
+                source_uri=None,
+                encoding='LINEAR16',
+                sample_rate_hertz=16000
+            )
+```
+
+---
+
+
+# My implementation
+
+```
+def recognize(self):
+        alternatives = audio_sample.recognize(self.audio_lang)
+        return alternatives[0]
+```
+
+---
+
+# My implementation
+
+```
+if __name__ == "__main__":
+
+...
+
+	audio_2_text = Audio_2_Text(args.audio_file,
+    					audio_lang)
+	audio_2_text.find_file()
+	audio_2_text.load_audio()
+	text_to_predict = audio_2_text.recognize()
+
+...
+
+```
+
+---
 
 # Behind Google Cloud Speech
 
