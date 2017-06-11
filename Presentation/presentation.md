@@ -185,7 +185,7 @@ speech_client = speech.Client()
 
 ---
 
-# My implementation
+# Code
 
 ```
 import io
@@ -204,7 +204,7 @@ class Audio_2_Text(object):
 --- 
 
 
-# My implementation
+# Code
 
 ```
 def find_file(self):
@@ -218,7 +218,7 @@ def find_file(self):
 ---
 
 
-# My implementation
+# Code
 
 ```
 def load_audio(self):
@@ -235,17 +235,18 @@ def load_audio(self):
 ---
 
 
-# My implementation
+# Code
 
 ```
 def recognize(self):
-        alternatives = audio_sample.recognize(self.audio_lang)
+        alternatives = audio_sample.recognize(
+        				self.audio_lang)
         return alternatives[0]
 ```
 
 ---
 
-# My implementation
+# Code
 
 ```
 if __name__ == "__main__":
@@ -266,7 +267,9 @@ if __name__ == "__main__":
 
 # Behind Google Cloud Speech
 
--
+- Tensor flow models on Clouds TPUs Technology.
+
+<div style="text-align:center"><img width="300" height="300" src="https://avatars0.githubusercontent.com/u/15658638?v=3&s=400" /></div>
 
 ---
 
