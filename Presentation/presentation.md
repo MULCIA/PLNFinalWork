@@ -187,5 +187,17 @@ speech_client = speech.Client()
 
 # Behind Google Cloud Speech
 
-- 
+-
+
+---
+
+# Small demostration
+
+![200%](http://www.evision-commerce.com/~/media/Images/Logos/Evision/DEMO%20Evision%20ecommerce.ashx?h=166&w=399)
+
+---
+
+# Any questions?
+
+<div style="text-align:center"><img width="500" height="500" src="http://clipsforclass.com/wp-content/uploads/2016/09/THB.png" /></div>
 
