@@ -191,7 +191,7 @@ speech_client = speech.Client()
 
 ---
 
-# Small demostration
+# Python integration demo
 
 ![200%](http://www.evision-commerce.com/~/media/Images/Logos/Evision/DEMO%20Evision%20ecommerce.ashx?h=166&w=399)
 
