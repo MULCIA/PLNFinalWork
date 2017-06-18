@@ -208,11 +208,11 @@ class Audio_2_Text(object):
 
 ```
 def find_file(self):
-        file_name = os.path.join(
-            os.path.dirname(__file__),
-            '.',
-            self.file_name
-        )
+    file_name = os.path.join(
+        os.path.dirname(__file__),
+        '.',
+        self.file_name
+    )
 ```
 
 ---
@@ -222,14 +222,14 @@ def find_file(self):
 
 ```
 def load_audio(self):
-        with io.open(self.file_name, 'rb') as audio_file:
-            content = audio_file.read()
-            self.audio = speech_client.sample(
-                content,
-                source_uri=None,
-                encoding='LINEAR16',
-                sample_rate_hertz=16000
-            )
+    with io.open(self.file_name, 'rb') as audio_file:
+        content = audio_file.read()
+        self.audio = speech_client.sample(
+            content,
+            source_uri=None,
+            encoding='LINEAR16',
+            sample_rate_hertz=16000
+        )
 ```
 
 ---
@@ -239,9 +239,9 @@ def load_audio(self):
 
 ```
 def recognize(self):
-        alternatives = audio_sample.recognize(
+    alternatives = audio_sample.recognize(
         				self.audio_lang)
-        return alternatives[0]
+    return alternatives[0]
 ```
 
 ---
@@ -251,17 +251,25 @@ def recognize(self):
 ```
 if __name__ == "__main__":
 
-...
+    ...
 
-	audio_2_text = Audio_2_Text(args.audio_file,
+    audio_2_text = Audio_2_Text(args.audio_file,
     					audio_lang)
-	audio_2_text.find_file()
-	audio_2_text.load_audio()
-	text_to_predict = audio_2_text.recognize()
+    audio_2_text.find_file()
+    audio_2_text.load_audio()
+    text_to_predict = audio_2_text.recognize()
 
-...
+    ...
 
 ```
+
+---
+
+# More examples
+
+<div style="text-align:center"><img width="300" height="300" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" /></div>
+
+<p style="text-align: center;">More examples aviables in <a href="https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/speech/cloud-client">Github</a></p>
 
 ---
 
@@ -281,5 +289,6 @@ if __name__ == "__main__":
 
 # Any questions?
 
-<div style="text-align:center"><img width="500" height="500" src="http://clipsforclass.com/wp-content/uploads/2016/09/THB.png" /></div>
+<div style="text-align:center"><img width="500" height="500" src="http://1.bp.blogspot.com/-dJbr7ZFz6rc/U92qAg5T8iI/AAAAAAAABVM/kIVlK0Gqvjw/s1600/Thanks.png" /></div>
 
+**email**: sergiorodriguezcalvo@gmail.com

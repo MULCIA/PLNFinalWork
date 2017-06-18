@@ -167,6 +167,12 @@ Nuestro main quedaría de esta forma.
 
 ---
 
+# More examples
+
+Hay muchos ejemplos en varios lenguajes disponibles 
+
+---
+
 # Behind Google Cloud Speech
 
 La parte más complicada de todo es la de conocer lo que hace por debajo. Google para algunas cosas es muy transparente y para otras todo lo contrario. En este caso, no es precisamente transparente. 
