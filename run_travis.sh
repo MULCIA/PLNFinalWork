@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-python3 main.py > /dev/null &
+python3 --version > /dev/null &
 nosetests --with-coverage
