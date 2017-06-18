@@ -169,7 +169,7 @@ Nuestro main quedaría de esta forma.
 
 # More examples
 
-Hay muchos ejemplos en varios lenguajes disponibles 
+Hay muchos ejemplos en varios lenguajes disponibles en Github.
 
 ---
 
