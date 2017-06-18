@@ -2,7 +2,7 @@ import argparse
 from PLNFinalWork.audio_recorder import Audio_Recorder
 from PLNFinalWork.audio_2_text import Audio_2_Text
 
-# python3 main.py "Hola esto es un ejemplo" "spanish" model.pickle output.wav 
+# python3 main.py "Hola esto es un ejemplo" "spanish" model.pickle output.wav
 
 if __name__ == "__main__":
 
@@ -14,9 +14,7 @@ if __name__ == "__main__":
     parser.add_argument('audio_file', metavar='M', type=str, help='Files to classify')
     args = parser.parse_args()
 
-    print(args)
-
-    """println("Recording...")
+    println("Recording...")
 
     audio_recorder = Audio_Recorder()
     audio_recorder.recording()
@@ -26,7 +24,7 @@ if __name__ == "__main__":
 
     println("Getting text from audio...")
 
-    audio_lang = '' #TODO: obtener idioma tipo en-US
+    audio_lang = 'en-US' if args.lang == 'english' else 'es-ES'
 
     audio_2_text = Audio_2_Text(args.audio_file, audio_lang)
     audio_2_text.find_file()
@@ -43,4 +41,4 @@ if __name__ == "__main__":
     if text_to_predict == args.text and predicted == args.lang:
         print('')
     else:
-        print('')"""
+        print('')
