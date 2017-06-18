@@ -241,7 +241,7 @@ def load_audio(self):
 def recognize(self):
     alternatives = audio_sample.recognize(
         				self.audio_lang)
-    return alternatives[0]
+    return '{}'.format(alternatives[0].transcript)
 ```
 
 ---
