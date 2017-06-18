@@ -2,18 +2,21 @@ import argparse
 from PLNFinalWork.audio_recorder import Audio_Recorder
 from PLNFinalWork.audio_2_text import Audio_2_Text
 
+# python3 main.py "Hola esto es un ejemplo" "spanish" model.pickle output.wav 
+
 if __name__ == "__main__":
 
-    #TODO: Recuperar parametros: texto e idioma.
     #Get arguments
-    parser = argparse.ArgumentParser(description='Files classification')
-    parser.add_argument('text', metavar='M', type=str, help='Pickle file')
-    parser.add_argument('lang', metavar='F', nargs='+', type=str, help='Files to classify')
-    parser.add_argument('model', metavar='F', nargs='+', type=str, help='Files to classify')
-    parser.add_argument('audio_file', metavar='F', nargs='+', type=str, help='Files to classify')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('text', metavar='M', type=str, help='Text from audio')
+    parser.add_argument('lang', metavar='M', type=str, help='Language')
+    parser.add_argument('model', metavar='M', type=str, help='Pickle file')
+    parser.add_argument('audio_file', metavar='M', type=str, help='Files to classify')
     args = parser.parse_args()
 
-    println("Recording...")
+    print(args)
+
+    """println("Recording...")
 
     audio_recorder = Audio_Recorder()
     audio_recorder.recording()
@@ -40,4 +43,4 @@ if __name__ == "__main__":
     if text_to_predict == args.text and predicted == args.lang:
         print('')
     else:
-        print('')
+        print('')"""
