@@ -1,3 +1,7 @@
+.DS_Store
+output.wav
+model.pickle
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
