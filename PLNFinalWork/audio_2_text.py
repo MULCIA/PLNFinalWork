@@ -28,5 +28,5 @@ class Audio_2_Text(object):
             )
 
     def recognize(self):
-        alternatives = audio_sample.recognize(self.audio_lang)
+        alternatives = self.audio.recognize(self.audio_lang)
         return '{}'.format(alternatives[0].transcript)
