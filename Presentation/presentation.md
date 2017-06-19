@@ -208,7 +208,7 @@ class Audio_2_Text(object):
 
 ```
 def find_file(self):
-    file_name = os.path.join(
+    self.file_name = os.path.join(
         os.path.dirname(__file__),
         '.',
         self.file_name
