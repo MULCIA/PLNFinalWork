@@ -239,8 +239,7 @@ def load_audio(self):
 
 ```
 def recognize(self):
-    alternatives = self.audio.recognize(
-        				self.audio_lang)
+    alternatives = self.audio.recognize(self.audio_lang)
     return '{}'.format(alternatives[0].transcript)
 ```
 
