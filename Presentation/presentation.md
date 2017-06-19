@@ -5,7 +5,7 @@ Google Cloud Speech
 
 ##### [API](https://cloud.google.com/speech/) to convert audio to test
 
-###### Created by Sergio RodrÃ­guez ( [@serrodcal](https://github.com/serrodcal) )
+###### Created by Sergio Rodríguez ( [@serrodcal](https://github.com/serrodcal) )
 
 ---
 
@@ -201,7 +201,7 @@ class Audio_2_Text(object):
         self.audio_lang = audio_lang
 ```
 
---- 
+---
 
 
 # Code
