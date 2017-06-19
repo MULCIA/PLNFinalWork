@@ -5,7 +5,7 @@ Google Cloud Speech
 
 ##### [API](https://cloud.google.com/speech/) to convert audio to test
 
-###### Created by Sergio Rodríguez ( [@serrodcal](https://github.com/serrodcal) )
+###### Created by Sergio RodrÃ­guez ( [@serrodcal](https://github.com/serrodcal) )
 
 ---
 
@@ -239,7 +239,7 @@ def load_audio(self):
 
 ```
 def recognize(self):
-    alternatives = audio_sample.recognize(
+    alternatives = self.audio.recognize(
         				self.audio_lang)
     return '{}'.format(alternatives[0].transcript)
 ```
